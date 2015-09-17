@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="Accounts" representedClassName="Accounts" syncable="YES">
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="occupation" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="dailyLogin" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DailyLogin" inverseName="account" inverseEntity="DailyLogin" syncable="YES"/>
+    </entity>
+    <entity name="AppSession" representedClassName="AppSession" syncable="YES">
+        <attribute name="session" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="BreakEnd" representedClassName="BreakEnd" syncable="YES">
+        <attribute name="timeBreakEnd" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="breakStart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BreakStart" inverseName="breakEnd" inverseEntity="BreakStart" syncable="YES"/>
+    </entity>
+    <entity name="BreakStart" representedClassName="BreakStart" syncable="YES">
+        <attribute name="timeBreakStart" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="breakEnd" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BreakEnd" inverseName="breakStart" inverseEntity="BreakEnd" syncable="YES"/>
+        <relationship name="dailyPunchIn" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DailyPunchIn" inverseName="breakStarts" inverseEntity="DailyPunchIn" syncable="YES"/>
+    </entity>
+    <entity name="DailyLogin" representedClassName="DailyLogin" syncable="YES">
+        <attribute name="dateLogin" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="day" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalWorkHours" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Accounts" inverseName="dailyLogin" inverseEntity="Accounts" syncable="YES"/>
+        <relationship name="dailyPunchIn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyPunchIn" inverseName="dailyLogin" inverseEntity="DailyPunchIn" syncable="YES"/>
+        <relationship name="dailySchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="dailyLogin" inverseEntity="DailySchedule" syncable="YES"/>
+    </entity>
+    <entity name="DailyPunchIn" representedClassName="DailyPunchIn" syncable="YES">
+        <attribute name="timePunchIn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="totalBreakHours" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="breakStarts" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BreakStart" inverseName="dailyPunchIn" inverseEntity="BreakStart" syncable="YES"/>
+        <relationship name="dailyLogin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyLogin" inverseName="dailyPunchIn" inverseEntity="DailyLogin" syncable="YES"/>
+        <relationship name="dailyPunchOut" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyPunchOut" inverseName="dailyPunchIn" inverseEntity="DailyPunchOut" syncable="YES"/>
+    </entity>
+    <entity name="DailyPunchOut" representedClassName="DailyPunchOut" syncable="YES">
+        <attribute name="timePunchOut" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="dailyPunchIn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyPunchIn" inverseName="dailyPunchOut" inverseEntity="DailyPunchIn" syncable="YES"/>
+    </entity>
+    <entity name="DailySchedule" representedClassName="DailySchedule" syncable="YES">
+        <attribute name="dateSchedule" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timeIn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timeOut" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="dailyLogin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyLogin" inverseName="dailySchedule" inverseEntity="DailyLogin" syncable="YES"/>
+        <relationship name="holiday" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Holiday" inverseName="dailySchedule" inverseEntity="Holiday" syncable="YES"/>
+    </entity>
+    <entity name="Holiday" representedClassName="Holiday" syncable="YES">
+        <attribute name="payPercent" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="dailySchedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="holiday" inverseEntity="DailySchedule" syncable="YES"/>
+    </entity>
+    <entity name="Passcode" representedClassName="Passcode" syncable="YES">
+        <attribute name="passcodes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="show" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Accounts" positionX="-6228" positionY="-1036" width="128" height="118"/>
+        <element name="AppSession" positionX="-5886" positionY="-1293" width="128" height="60"/>
+        <element name="BreakEnd" positionX="-5375" positionY="-900" width="128" height="73"/>
+        <element name="BreakStart" positionX="-5580" positionY="-918" width="128" height="88"/>
+        <element name="DailyPunchOut" positionX="-6212" positionY="-730" width="128" height="73"/>
+        <element name="DailySchedule" positionX="-5618" positionY="-775" width="128" height="118"/>
+        <element name="Holiday" positionX="-5420" positionY="-702" width="128" height="73"/>
+        <element name="Passcode" positionX="-5555" positionY="-1080" width="128" height="75"/>
+        <element name="DailyLogin" positionX="-5816" positionY="-1134" width="128" height="133"/>
+        <element name="DailyPunchIn" positionX="-6023" positionY="-784" width="128" height="118"/>
+    </elements>
+</model>

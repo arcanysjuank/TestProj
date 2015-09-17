@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ctc-KA-MkJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Setting-->
+        <scene sceneID="Jzc-u4-P9Y">
+            <objects>
+                <navigationController id="Ctc-KA-MkJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Setting" image="Setting" id="arc-n1-b62"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Ra-UD-6UL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pkV-f7-N9j" kind="relationship" relationship="rootViewController" id="xGd-Lt-Tye"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fa-Va-t3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="403"/>
+        </scene>
+        <!--Third View-->
+        <scene sceneID="gWc-ao-yUH">
+            <objects>
+                <viewController id="pkV-f7-N9j" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SQ2-Dy-DfH"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Sz-Fe-Whp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0VB-7V-b8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third View" id="B2t-PU-p2c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfx-TR-Vhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957" y="398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Setting" width="25" height="25"/>
+    </resources>
+</document>
