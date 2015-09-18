@@ -39,6 +39,7 @@
         [attString addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:17] range:NSMakeRange(stringText.length - stringDay.length, stringDay.length)];
         
         self.labelTopText.attributedText = attString;
+        
     }
     
 }
