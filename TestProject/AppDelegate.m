@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import <Fabric/Fabric.h>
+#import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-#import <MagicalRecord/MagicalRecord.h>
+
 #import "CoreDataManager.h"
 
 #define SQLITE_NAME @"TestProject.sqlite"

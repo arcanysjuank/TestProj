@@ -383,8 +383,8 @@
 				B8B4320C1BA696FD00D73CA4 /* Sources */,
 				B8B4320D1BA696FD00D73CA4 /* Frameworks */,
 				B8B4320E1BA696FD00D73CA4 /* Resources */,
-				B8B4323C1BA6973D00D73CA4 /* ShellScript */,
 				84606B4C87440C3348F6D396 /* Copy Pods Resources */,
+				B8FCEA6F1BAFDE2F002568D2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -490,7 +490,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8B4323C1BA6973D00D73CA4 /* ShellScript */ = {
+		B8FCEA6F1BAFDE2F002568D2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
