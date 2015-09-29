@@ -424,7 +424,7 @@
 				TargetAttributes = {
 					B8B4320F1BA696FD00D73CA4 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = VZT3T263YZ;
+						DevelopmentTeam = TV24GP2G9A;
 					};
 					B8B4322B1BA6970100D73CA4 = {
 						CreatedOnToolsVersion = 6.4;
@@ -709,7 +709,7 @@
 			baseConfigurationReference = 3424D79FC700E8D6CAA68BAE /* Pods-TestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Kenneth Vega (654C55G37Z)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Kenneth Vega (654C55G37Z)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -728,7 +728,7 @@
 			baseConfigurationReference = 9EBD7DF90A89E900EB086CF1 /* Pods-TestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: John Kenneth Vega (654C55G37Z)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: John Kenneth Vega (654C55G37Z)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
