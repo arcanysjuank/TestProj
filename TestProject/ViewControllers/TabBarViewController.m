@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //sample here
     UINavigationController *navFirst = [self getNavigationInStoryboardName:First];
     UINavigationController *navSecond = [self getNavigationInStoryboardName:Second];
     UINavigationController *navThird = [self getNavigationInStoryboardName:Third];
