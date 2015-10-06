@@ -17,8 +17,6 @@
 		B8B432241BA6970100D73CA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8B432231BA6970100D73CA4 /* Images.xcassets */; };
 		B8B432271BA6970100D73CA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B432251BA6970100D73CA4 /* LaunchScreen.xib */; };
 		B8B432331BA6970100D73CA4 /* TestProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B432321BA6970100D73CA4 /* TestProjectTests.m */; };
-		B8B4323F1BA697BE00D73CA4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B4323D1BA697BE00D73CA4 /* Fabric.framework */; };
-		B8B432401BA697BF00D73CA4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B4323E1BA697BE00D73CA4 /* Crashlytics.framework */; };
 		B8BEFB181BA7B2E70029E28E /* DailyLogin+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BEFB051BA7B2E70029E28E /* DailyLogin+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		B8BEFB191BA7B2E70029E28E /* AppSession+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BEFB071BA7B2E70029E28E /* AppSession+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		B8BEFB1A1BA7B2E70029E28E /* Accounts+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BEFB091BA7B2E70029E28E /* Accounts+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
@@ -79,8 +77,6 @@
 		B8B4322C1BA6970100D73CA4 /* TestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B432311BA6970100D73CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8B432321BA6970100D73CA4 /* TestProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjectTests.m; sourceTree = "<group>"; };
-		B8B4323D1BA697BE00D73CA4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		B8B4323E1BA697BE00D73CA4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		B8BEFB041BA7B2E70029E28E /* DailyLogin+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DailyLogin+CoreDataProperties.h"; path = "CoreData/DailyLogin+CoreDataProperties.h"; sourceTree = "<group>"; };
 		B8BEFB051BA7B2E70029E28E /* DailyLogin+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DailyLogin+CoreDataProperties.m"; path = "CoreData/DailyLogin+CoreDataProperties.m"; sourceTree = "<group>"; };
 		B8BEFB061BA7B2E70029E28E /* AppSession+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppSession+CoreDataProperties.h"; path = "CoreData/AppSession+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -145,8 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8B432401BA697BF00D73CA4 /* Crashlytics.framework in Frameworks */,
-				B8B4323F1BA697BE00D73CA4 /* Fabric.framework in Frameworks */,
 				4AAD1D1643D52CBB92C3C2AB /* libPods-TestProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,8 +197,6 @@
 		B8B432071BA696FD00D73CA4 = {
 			isa = PBXGroup;
 			children = (
-				B8B4323D1BA697BE00D73CA4 /* Fabric.framework */,
-				B8B4323E1BA697BE00D73CA4 /* Crashlytics.framework */,
 				B8B432121BA696FE00D73CA4 /* TestProject */,
 				B8B4322F1BA6970100D73CA4 /* TestProjectTests */,
 				B8B432111BA696FE00D73CA4 /* Products */,
@@ -384,7 +376,7 @@
 				B8B4320D1BA696FD00D73CA4 /* Frameworks */,
 				B8B4320E1BA696FD00D73CA4 /* Resources */,
 				84606B4C87440C3348F6D396 /* Copy Pods Resources */,
-				B8FCEA6F1BAFDE2F002568D2 /* ShellScript */,
+				B88474031BC3753900E01F76 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -490,7 +482,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestProject/Pods-TestProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8FCEA6F1BAFDE2F002568D2 /* ShellScript */ = {
+		B88474031BC3753900E01F76 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,7 +493,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run df0627e9913068021da629fa751d7c40d63c7ea4 d49173fe2a53f876cbb06186585cbc4eaecd74b3fb75f42a7fadaf8933d9ca9f";
+			shellScript = "./Pods/Fabric/Fabric.framework/run df0627e9913068021da629fa751d7c40d63c7ea4 d49173fe2a53f876cbb06186585cbc4eaecd74b3fb75f42a7fadaf8933d9ca9f";
 		};
 		C4597064842A2E854F4DB560 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

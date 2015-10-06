@@ -8,53 +8,36 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>EasyMapping.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>MFSideMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-TestProject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2075F60DFD021929B803558D1ADD6D82</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2B68834ECE8FF5EFC835886234239D5B</key>
+		<key>0ECC14274DCBFE2B5718C2560DF0D13D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -64,12 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AF05988E1AD845943F78DD86E1896D5</key>
+		<key>9A833FA189DE44BBC38576797F441EDC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE081E6BDC358B800C450E56893A8C76</key>
+		<key>A4A2F21AC15D2725590A75AB5F9A3339</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1CF30D71C63BC5D17440C29A39215D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
